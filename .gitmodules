@@ -1,0 +1,6 @@
+[submodule "news-app-backend"]
+	path = news-app-backend
+	url = https://github.com/ameerdhi7/news-app-backend.git
+[submodule "news-app-frontend"]
+	path = news-app-frontend
+	url = https://github.com/ameerdhi7/news-app-frontend.git

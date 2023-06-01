@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  laravel:
+    build:
+      context: ./news-app-backend
+    ports:
+      - 9000:9000
+    depends_on:
+      - postgres
+
+  react:
+    build:
+      context: ./news-app-frontend
+    ports:
+      - 80:80
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=laravel
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=laravel
