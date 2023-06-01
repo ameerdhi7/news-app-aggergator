@@ -19,7 +19,7 @@ Please follow the steps below to set up and run the project:
 
 3. Build and run the Docker containers using Docker Compose:
    ```shell
-    cd parent
+   docker-compose up
    ```
    This will start the containers for the Laravel backend, React frontend, and PostgreSQL database.
 4. Access the Laravel backend at http://localhost:9000 and the React frontend at http://localhost.
